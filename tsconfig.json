@@ -6,7 +6,8 @@
         "declaration": true,
         "types": [
             "babylonjs"
-        ]
+        ],
+        "moduleResolution": "node"
     },
     "include": [
         "lib/**/*.ts"
