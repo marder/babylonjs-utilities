@@ -1,4 +1,4 @@
-import { Texture, Camera, Material, AbstractMesh, StandardMaterial } from "babylonjs";
+import { Texture } from "babylonjs";
 
 export type ArenaGroundInit = {
     /** Size on x and z axis */
