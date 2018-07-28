@@ -71,3 +71,7 @@ typings/
 
 # Serverless directories
 .serverless
+
+lib/**/*.d.ts
+lib/**/*.js
+lib/**/*.js.map
