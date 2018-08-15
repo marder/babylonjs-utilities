@@ -1,5 +1,6 @@
 import { Scene, Engine, EnvironmentHelper } from "babylonjs";
 import { ArenaInit } from "./ArenaInit";
+import { toTexture } from "../Resources/Textures/arena-ground";
 
 export class Arena extends Scene {
 
@@ -11,6 +12,11 @@ export class Arena extends Scene {
     }
 
     protected initialize(init: ArenaInit) {
+
+        // Polyfill missing init values
+        if (!init.ground.texture) {
+            toTexture(this);
+        }
 
         this.environment = this.createDefaultEnvironment({
             createGround: true,
