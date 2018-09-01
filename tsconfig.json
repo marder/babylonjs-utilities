@@ -7,10 +7,11 @@
         "types": [
             "babylonjs"
         ],
-        "moduleResolution": "node"
+        "moduleResolution": "node",
+        "outDir": "lib"
     },
     "include": [
-        "lib/**/*.ts"
+        "src/**/*.ts"
     ],
     "exclude": [
         "node_modules",
